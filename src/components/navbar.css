@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    background-color: yellow;
+}
+.name-logo{
+    flex: 1;
+}
+.nav-bar-components{
+    flex:1;
+    display: flex;
+
+}
+img{
+    width: 180px;
+}
