@@ -2,8 +2,9 @@ import React,{ useState } from 'react'
 import './App.css'
 import Home from './home'
 import About from './about'
-import MyWork from './mywork'
-import ContactMe from './contactme'
+// import MyWork from './mywork'
+import Contact from './Contact'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
   <>  
     <Home />
     <About />
-    <MyWork />
-    <ContactMe />
+    {/* <MyWork /> */}
+    <Contact />
+    <Footer />
   </>
   )
 }

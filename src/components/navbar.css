@@ -1,6 +1,5 @@
 .container{
     display: flex;
-    background-color: yellow;
 }
 .name-logo{
     flex: 1;
