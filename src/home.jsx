@@ -4,7 +4,7 @@ import Body from "./components/home-body"
 
 function Home(){
     return(
-        <div style={{margin:"0px", height:"100vh"}}>
+        <div className="m-0 h-screen">
             <Navbar />
             <Body />
         </div>

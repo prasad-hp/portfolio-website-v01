@@ -1,5 +1,4 @@
 import React,{ useState } from 'react'
-import './App.css'
 import Home from './home'
 import About from './about'
 // import MyWork from './mywork'
@@ -9,13 +8,13 @@ import Footer from './components/Footer'
 
 function App() {
   return(
-  <>  
+  <div className='bg-[url("./images/Background.png")]'>  
     <Home />
     <About />
     {/* <MyWork /> */}
     <Contact />
     <Footer />
-  </>
+  </div>
   )
 }
 
