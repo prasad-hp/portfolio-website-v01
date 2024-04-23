@@ -1,21 +1,23 @@
-import React,{ useState } from 'react'
-import Home from './home'
-import About from './about'
-// import MyWork from './mywork'
-import Contact from './Contact'
-import Footer from './components/Footer'
+import React from 'react'
+import Home from './pages/Home'
+import About from './pages/About'
+import MyWork from './pages/Mywork'
+import Contact from './pages/Contact'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
-  return(
-  <div className='bg-[url("./images/Background.png")]'>  
-    <Home />
-    <About />
-    {/* <MyWork /> */}
-    <Contact />
-    <Footer />
-  </div>
-  )
+  return (
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/work" element={<MyWork />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

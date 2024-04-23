@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Navbar from "./components/navbar";
-import Body from "./components/home-body"
+import Navbar from "../components/navbar";
+import Body from "../components/home-body"
 
 function Home(){
     return(

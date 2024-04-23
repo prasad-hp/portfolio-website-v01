@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import profilephoto from "./images/prasad-pic.jpeg"
+import profilephoto from "../images/prasad-pic.jpeg"
 
 function About(){
     return(
