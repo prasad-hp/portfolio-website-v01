@@ -5,7 +5,7 @@ import Body from "./components/home-body"
 function Home(){
     return(
         <div className="m-0 h-screen">
-            <Navbar />
+            {/* <Navbar /> */}
             <Body />
         </div>
     )
