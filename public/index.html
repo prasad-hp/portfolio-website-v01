@@ -27,24 +27,23 @@
             </div>
         </nav>
         <nav class="max-w-xl lg:hidden md:block">
-            <div class="flex justify-between w-screen items-center align-middle px-10">
+            <div class="flex justify-between items-center align-middle px-8 py-4 w-screen">
                     <img src="../images/Prasad.jpeg" class="rounded-full w-20"/>
-                    <button class="m-0 p-0"><img src="../images/menu_white_24dp.svg" class="m-0 p-0 h-20"/></button>
+                    <button onclick="showMenu()" class="m-0 p-0" ><img id="menuIcon" src="../images/menu_white_24dp.svg" class="m-0 p-0 h-14"/></button>
             </div>
-        </nav>
+        </nav>  
 
-
-
-        <!-- <menu class="bg-Light-Navy h-screen w-9/12 absolute right-0 max-w-xl lg:hidden md:block">
-                    <img src="../images/clear_white_24dp.svg" class="w-12 mx-10 my-10 absolute right-0"/>  
-                    <ol class="flex flex-col gap-7 text-2xl w-full text-Light-White text-center my-36">
-                        <li>Home</li>   
-                        <li>About</li>
-                        <li>Work</li>
-                        <li>Contact</li>
-                        <li><button>Resume</button></li>
-                    </ol>
-        </menu> -->
+        <menu class="hidden" id="menuToggle">
+            <div class="bg-Light-Navy h-80 w-7/12 absolute right-0 max-w-xl lg:hidden md:block rounded-md">
+                <ol class="flex flex-col gap-7 text-2xl w-full text-Light-White text-center my-4">
+                    <li>Home</li>   
+                    <li>About</li>
+                    <li>Work</li>
+                    <li>Contact</li>
+                    <li><button>Resume</button></li>
+                </ol>
+            </div>
+        </menu>
 
   
     </div>
