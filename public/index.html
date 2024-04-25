@@ -9,43 +9,58 @@
     <title>Prasad Hp</title>
 </head>
 <body class="bg-navy">
-    <div id="home">
-        <nav class="hidden lg:block">
+    <div id="home" class="h-screen">
+        <nav class="hidden lg:block" id="navBar-1">
             <div class="flex justify-between items-center w-screen py-1 px-3">
                 <div class="w-1/2">
                     <img src="./images/Prasad.jpeg" class="rounded-full w-20"/>
                 </div>
                 <div class="w-5/12">
                     <ol class="grid grid-cols-5 grid-flow-col gap-5 text-2xl w-full text-Light-White text-center">
-                        <li class="col-span-1 ">Home</li>   
-                        <li class="col-span-1 ">About</li>
-                        <li class="col-span-1 ">Work</li>
-                        <li class="col-span-1 ">Contact</li>
-                        <li class="col-span-1 "><button>Resume</button></li>
+                        <li class="col-span-1"><a href="#home">Home</a></li>   
+                        <li class="col-span-1"><a href="#about"></a>About</a></li>
+                        <li class="col-span-1"><a href="#work"></a>Work</a></li>
+                        <li class="col-span-1"><a href="#contact"></a>Contact</a></li>
+                        <li class="col-span-1"><button>Resume</button></li>
                     </ol>
                 </div>
             </div>
         </nav>
-        <nav class="max-w-xl lg:hidden md:block">
+        <nav class="max-w-xl lg:hidden md:block fixed">
             <div class="flex justify-between items-center align-middle px-8 py-4 w-screen">
-                    <img src="./images/Prasad.jpeg" class="rounded-full w-20"/>
+                    <img src="./images/Prasad.jpeg" class="rounded-full w-16"/>
                     <button onclick="showMenu()" class="m-0 p-0" ><img id="menuIcon" src="./images/menu_white_24dp.svg" class="m-0 p-0 h-14"/></button>
             </div>
         </nav>  
 
         <menu class="hidden" id="menuToggle">
-            <div class="bg-Light-Navy h-80 w-7/12 absolute right-0 max-w-xl lg:hidden md:block rounded-md">
-                <ol class="flex flex-col gap-7 text-2xl w-full text-Light-White text-center my-4">
+            <div class="bg-Light-Navy h-4/6 w-full absolute right-0 max-w-xl lg:hidden md:block rounded-md">
+                <ol class="flex flex-col gap-8 text-2xl w-full text-Light-White text-center my-12">
                     <li>Home</li>   
                     <li>About</li>
                     <li>Work</li>
                     <li>Contact</li>
-                    <li><button>Resume</button></li>
+                    <li ><button class="py-4 mx-3 border border-spacing-8 border-spacing-x-8 rounded-md"> Resume </button></li>   
                 </ol>
             </div>
         </menu>
-
-  
+        <div class="grid grid-cols-4 grid-rows-4 h-5/6">
+            <div class="col-span-2 col-start-2 row-span-2 row-start-1 gap-3 lg:row-start-2">
+                <h2 class="text-3xl text-Lightest-Slate mb-10-">Hi, My Name is,</h2>
+                <h1 class="text-8xl font-bold text-Light-White mb-5">Prasad Hp</h1>
+                <h2 class="text-5xl text-Slate mb-5">I build experiences for Web.</h2>
+                <p  class="text-xl text-Lightest-Slate mb-3">I am an Engineer who likes to build experiences for the Web and
+                    learn while doing so.</p>
+            </div>
+        </div>
+    </div>
+    <div class="h-screen" id="about">
+        <div class="grid grid-cols-4 grid-rows-4 h-5/6">
+            <div class="col-span-2 col-start-2 row-span-2 row-start-1 gap-3 lg:row-start-2">
+                <h2 class="text-3xl text-Lightest-Slate mb-10-">Hi, My Name is,</h2>
+                <p  class="text-xl text-Lightest-Slate mb-3">Hello! I'm Prasad Hp, a Mechanical Engineer with a passion for design and a newfound interest for web development. Originally trained in mechanical engineering, I've delved into the world of designing and have worked in both private and government banking sectors. Now, I'm transitioning into web development, where I'm excited to combine my analytical skills with my creative flair to craft exceptional digital experiences.</p>
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

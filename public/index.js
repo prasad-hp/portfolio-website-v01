@@ -13,3 +13,5 @@ function showMenu(){
     }
 
 }
+// let navBar1 = document.getElementById("navBar1")
+// document.addEventListener("scroll", )
