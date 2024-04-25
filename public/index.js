@@ -12,6 +12,20 @@ function showMenu(){
         menuIcon.setAttribute("src", "./images/menu_white_24dp.svg ")
     }
 
+
 }
-// let navBar1 = document.getElementById("navBar1")
-// document.addEventListener("scroll", )
+const transisionNavBar = () => {
+    const navBar1 = document.getElementById("navBar-1");
+    if (window.scrollY > 100) {
+        navBar1.className = "hidden lg:block fixed bg-Light-Navy"
+    } else {
+        navBar1.className = "hidden lg:block fixed"
+    }
+};
+
+window.addEventListener("scroll", transisionNavBar);
+
+window.addEventListener("beforeunload", () => {
+    window.removeEventListener("scroll", transisionNavBar);
+});
+
